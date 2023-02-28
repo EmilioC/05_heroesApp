@@ -10,17 +10,19 @@ const routes : Routes = [
   },
   {
     path: '**',
-    component: ErrorPageComponent
+    /* component: ErrorPageComponent */
+    redirectTo: '404'
   }
 ]
-
-
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     RouterModule.forRoot( routes )
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class AppRoutingModule { }
