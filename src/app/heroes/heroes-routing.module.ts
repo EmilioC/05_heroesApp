@@ -6,7 +6,7 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 
-const routes: Routes = [
+const rutas: Routes = [
   {
     path: '',
     children: [
@@ -24,7 +24,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild( rutas )
   ],
   exports: [
     RouterModule
