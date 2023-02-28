@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
